@@ -1,0 +1,539 @@
+/* Imports of Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+    font-family: 'Fredoka', 'Comic Neue', 'Quicksand', 'Roboto', sans-serif;
+    color: #1a1a1a;
+    background: #FDF8F2; /* Playful cream background */
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+}
+
+/* Base Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka', 'Comic Neue', sans-serif;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+/* Links */
+a {
+    color: #FF4E88; /* Cute cartoon pink */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+a:hover {
+    color: #C084FC; /* Purple */
+    text-decoration: underline;
+}
+
+/* Inputs & Form Fields (Cartoon / Comic theme) */
+.form-control, select, textarea {
+    font-family: 'Fredoka', sans-serif;
+    border: 3px solid #1a1a1a !important;
+    border-radius: 12px !important;
+    background-color: #fff !important;
+    color: #1a1a1a !important;
+    padding: 10px 15px !important;
+    font-weight: 600 !important;
+    box-shadow: 3px 3px 0px #1a1a1a !important;
+    transition: all 0.2s ease-in-out !important;
+}
+.form-control:focus, select:focus, textarea:focus {
+    outline: none !important;
+    background-color: #FFFbeb !important; /* Soft yellow highlight */
+    box-shadow: 5px 5px 0px #1a1a1a !important;
+    transform: translate(-2px, -2px);
+}
+.form-label {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700 !important;
+    color: #1a1a1a !important;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    background-color: #FFF2CC !important; /* Soft cartoon yellow badge */
+    border: 3px solid #1a1a1a !important;
+    border-radius: 12px !important;
+    padding: 10px 20px !important;
+    box-shadow: 4px 4px 0px #1a1a1a !important;
+    font-weight: 700;
+}
+.breadcrumb-item a {
+    color: #1a1a1a;
+}
+.breadcrumb-item.active {
+    color: #FF4E88;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #1a1a1a !important;
+    content: "➔" !important;
+    padding: 0 8px;
+}
+
+/* Cards (Neo-brutalist cartoon box) */
+.card {
+    background: #fff;
+    border: 3px solid #1a1a1a !important;
+    border-radius: 16px !important;
+    box-shadow: 6px 6px 0px #1a1a1a !important;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-header {
+    background-color: #FFDE4D !important; /* Bright yellow header */
+    border-bottom: 3px solid #1a1a1a !important;
+    padding: 15px 20px !important;
+}
+.card-header .card-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1a1a1a;
+}
+.card-body {
+    padding: 25px !important;
+}
+
+/* Buttons */
+.btn {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 3px solid #1a1a1a !important;
+    border-radius: 12px !important;
+    padding: 10px 20px !important;
+    box-shadow: 4px 4px 0px #1a1a1a !important;
+    transition: all 0.15s ease-in-out !important;
+    position: relative;
+}
+.btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #1a1a1a !important;
+    color: #1a1a1a !important;
+}
+.btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #1a1a1a !important;
+}
+.btn-primary {
+    background-color: #38BDF8 !important; /* Sky Blue */
+    color: #1a1a1a !important;
+}
+.btn-primary:hover {
+    background-color: #0EA5E9 !important;
+}
+.btn-success {
+    background-color: #4ADE80 !important; /* Bright green */
+    color: #1a1a1a !important;
+}
+.btn-success:hover {
+    background-color: #22C55E !important;
+}
+.btn-danger {
+    background-color: #FF5C5C !important;
+    color: #1a1a1a !important;
+}
+.btn-danger:hover {
+    background-color: #EF4444 !important;
+}
+
+/* Add / Save Icon Buttons (Used in top bars) */
+.add-btn, .save-btn {
+    display: inline-block;
+    background: #FFDE4D !important; /* Yellow */
+    border: 3px solid #1a1a1a !important;
+    border-radius: 12px !important;
+    box-shadow: 4px 4px 0px #1a1a1a !important;
+    padding: 8px 12px !important;
+    text-align: center;
+    color: #1a1a1a !important;
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: 10px;
+    transition: all 0.15s ease-in-out;
+}
+.add-btn i, .save-btn i {
+    font-size: 20px;
+    color: #1a1a1a !important;
+    margin-bottom: 2px;
+}
+.add-btn:hover, .save-btn:hover {
+    text-decoration: none;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #1a1a1a !important;
+}
+.add-btn:active, .save-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #1a1a1a !important;
+}
+
+/* Table styling */
+.table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border: 3px solid #1a1a1a !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+.table th {
+    background-color: #C084FC !important; /* Cute Purple */
+    color: #1a1a1a !important;
+    font-weight: 700;
+    border-bottom: 3px solid #1a1a1a !important;
+    border-right: 2px solid #1a1a1a !important;
+    padding: 12px !important;
+}
+.table td {
+    border-bottom: 2px solid #1a1a1a !important;
+    border-right: 2px solid #1a1a1a !important;
+    background-color: #fff !important;
+    padding: 12px !important;
+    font-weight: 600;
+    vertical-align: middle;
+}
+.table tr:last-child td {
+    border-bottom: none !important;
+}
+.table th:last-child, .table td:last-child {
+    border-right: none !important;
+}
+.table-striped tbody tr:nth-of-type(odd) td {
+    background-color: #F8F6FF !important; /* Striped with soft violet-white */
+}
+
+/* Action Icon Buttons inside tables */
+.view_btn, .edit_btn, .del_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #1a1a1a !important;
+    border-radius: 8px !important;
+    color: #1a1a1a !important;
+    box-shadow: 2px 2px 0px #1a1a1a !important;
+    transition: all 0.15s ease;
+    margin: 0 4px;
+}
+.view_btn { background-color: #38BDF8 !important; }
+.edit_btn { background-color: #FFDE4D !important; }
+.del_btn { background-color: #FF5C5C !important; }
+
+.view_btn:hover, .edit_btn:hover, .del_btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px #1a1a1a !important;
+    color: #1a1a1a !important;
+}
+.view_btn:active, .edit_btn:active, .del_btn:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px #1a1a1a !important;
+}
+
+/* CV Wrapper layout styling */
+.wrapper {
+    background: #fff;
+    border: 4px solid #1a1a1a !important;
+    border-radius: 24px !important;
+    box-shadow: 8px 8px 0px #1a1a1a !important;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+/* Sidebar styling (CV Left Column) */
+.sidebar-wrapper {
+    background: #FFF9E6 !important; /* Rich cream / yellow cartoon tone */
+    border-right: 4px solid #1a1a1a;
+    color: #1a1a1a;
+    padding: 0;
+}
+.sidebar-wrapper a {
+    color: #FF4E88;
+}
+.sidebar-wrapper .profile-container {
+    padding: 40px 20px;
+    background: #FFEAA7; /* Highlighted yellow panel */
+    border-bottom: 4px solid #1a1a1a;
+    text-align: center;
+}
+.sidebar-wrapper .profile {
+    border: 4px solid #1a1a1a !important;
+    box-shadow: 4px 4px 0px #1a1a1a !important;
+    margin-bottom: 20px;
+    background: #fff;
+}
+.sidebar-wrapper .name {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.sidebar-wrapper .tagline {
+    color: #FF4E88;
+    background: #fff;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 4px 10px;
+    display: inline-block;
+    font-weight: 700;
+    box-shadow: 2px 2px 0px #1a1a1a;
+}
+.sidebar-wrapper .container-block {
+    padding: 30px 25px;
+    border-bottom: 3px dashed #1a1a1a;
+}
+.sidebar-wrapper .container-block:last-child {
+    border-bottom: none;
+}
+.sidebar-wrapper .container-block-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: #C084FC; /* Purple badge title */
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 6px 12px;
+    display: inline-block;
+    box-shadow: 3px 3px 0px #1a1a1a;
+}
+
+/* Contact List Icons */
+.sidebar-wrapper .contact-list li {
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.sidebar-wrapper .contact-list i {
+    width: 28px;
+    height: 28px;
+    background-color: #A5F3FC !important; /* Soft blue icon back */
+    border: 2px solid #1a1a1a;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a !important;
+    box-shadow: 2px 2px 0px #1a1a1a;
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+/* Education in Sidebar */
+.sidebar-wrapper .education-container .item {
+    margin-bottom: 20px;
+    background: #fff;
+    border: 2px solid #1a1a1a;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 3px 3px 0px #1a1a1a;
+}
+.sidebar-wrapper .education-container .degree {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.sidebar-wrapper .education-container .meta {
+    font-weight: 600;
+    color: #FF4E88;
+}
+.sidebar-wrapper .education-container .time {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1a1a1a;
+    background: #E0F2FE;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 6px;
+    padding: 2px 6px;
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+/* Language and Interests badges */
+.sidebar-wrapper .interests-list, .sidebar-wrapper .languages-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+}
+.sidebar-wrapper .interests-list li, .sidebar-wrapper .languages-container ul li {
+    background: #fff !important;
+    color: #1a1a1a !important;
+    border: 2px solid #1a1a1a !important;
+    border-radius: 8px !important;
+    padding: 4px 10px !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    box-shadow: 2px 2px 0px #1a1a1a !important;
+    list-style: none;
+}
+.sidebar-wrapper .languages-container .lang-desc {
+    color: #FF4E88;
+    margin-left: 2px;
+}
+
+/* Main Wrapper (CV Right Column) */
+.main-wrapper {
+    background: #fff;
+    padding: 40px 30px;
+}
+.main-wrapper .section {
+    margin-bottom: 40px;
+}
+.main-wrapper .section-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #1a1a1a;
+}
+.main-wrapper .section-title .icon-holder {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a;
+    background: #FFDE4D !important; /* Cartoon yellow icon holder */
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 2.5px 2.5px 0px #1a1a1a;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.main-wrapper .section-title .icon-holder i {
+    color: #1a1a1a !important;
+}
+
+/* Experience items in main wrapper */
+.main-wrapper .experiences-section .item {
+    margin-bottom: 25px;
+    background: #FDFBFF;
+    border: 3px solid #1a1a1a;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 4px 4px 0px #1a1a1a;
+}
+.main-wrapper .job-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+.main-wrapper .company {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FF4E88;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+.main-wrapper .time {
+    font-size: 12px;
+    font-weight: 700;
+    background: #FFF2CC;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 4px 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 0px #1a1a1a;
+}
+.main-wrapper .upper-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.main-wrapper .details {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Projects items in main wrapper */
+.main-wrapper .projects-section .item {
+    margin-bottom: 15px;
+    background: #FFF9F6;
+    border: 3px solid #1a1a1a;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 3px 3px 0px #1a1a1a;
+}
+.main-wrapper .project-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+.main-wrapper .project-tagline {
+    font-weight: 600;
+    color: #555;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Skills list inside main wrapper */
+.skillset .item {
+    margin-bottom: 20px;
+}
+.skillset .level-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+.skillset .level-bar {
+    height: 20px;
+    background: #FFFbeb;
+    border: 3px solid #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 0px #1a1a1a;
+}
+.skillset .theme-progress-bar {
+    background: #4ADE80; /* Success Green fill */
+    border-right: 2px solid #1a1a1a;
+    height: 100%;
+}
+
+/* Footer layout */
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #FFEAA7 !important;
+    border-top: 4px solid #1a1a1a;
+    font-weight: 700;
+}
+.footer .copyright {
+    color: #1a1a1a;
+}
+.footer .fa-heart {
+    color: #FF4E88;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .sidebar-wrapper {
+        border-right: none;
+        border-bottom: 4px solid #1a1a1a;
+    }
+    .main-wrapper {
+        padding: 30px 20px;
+    }
+    .main-wrapper .upper-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
